@@ -14,6 +14,7 @@
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Title>Data generators using Bogus</Title>
 		<PackageIcon>LibIcon.png</PackageIcon>
+		<PackageProjectUrl>https://github.com/karenpayneoregon/bogus-training-data/tree/master/BogusLibrary</PackageProjectUrl>
 	</PropertyGroup>
 
 	<ItemGroup>

@@ -5,6 +5,8 @@ VisualStudioVersion = 17.14.36717.8
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BogusLibrary", "BogusLibrary\BogusLibrary.csproj", "{DDCA03E2-2BF7-E29B-55B5-4E176BCBCA9E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExamplesApp", "ExamplesApp\ExamplesApp.csproj", "{137A6B92-B744-4282-8BB5-4FCCA44F5979}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{DDCA03E2-2BF7-E29B-55B5-4E176BCBCA9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DDCA03E2-2BF7-E29B-55B5-4E176BCBCA9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DDCA03E2-2BF7-E29B-55B5-4E176BCBCA9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{137A6B92-B744-4282-8BB5-4FCCA44F5979}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{137A6B92-B744-4282-8BB5-4FCCA44F5979}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{137A6B92-B744-4282-8BB5-4FCCA44F5979}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{137A6B92-B744-4282-8BB5-4FCCA44F5979}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
