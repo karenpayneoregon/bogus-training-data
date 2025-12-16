@@ -21,6 +21,21 @@ internal partial class Program
         WindowUtility.SetConsoleWindowPosition(WindowUtility.AnchorWindow.Center);
 
         SetupLogging.Development();
+
+        try
+        {
+            if (!Directory.Exists("Json"))
+            {
+                Directory.CreateDirectory("Json");
+            }
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            Console.ReadLine();
+            Environment.Exit(1);
+        }
+        
         Setup();
 
     }
