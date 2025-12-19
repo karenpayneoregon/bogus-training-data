@@ -41,6 +41,8 @@ public sealed class DataContainer
     /// The collection is initialized using the <see cref="Generators.ProductGenerator.Create(int, bool)"/> method.
     /// </remarks>
     public List<Products> Products { get; set; }
+
+    public List<Vehicle> Vehicles { get; set; }
     
     /// <summary>
     /// Initializes a new instance of the <see cref="DataContainer"/> class.
@@ -64,6 +66,7 @@ public sealed class DataContainer
         Decimals = DecimalArrayGenerator.GenerateRange(20, 1, 1000);
         Humans = HumanGenerator.Create(25);
         Products = ProductGenerator.Create(30);
+        Vehicles = VehicleGenerator.Create(25);
     }
    
 }

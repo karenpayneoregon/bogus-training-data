@@ -8,13 +8,14 @@
 		<Copyright>Karen Payne</Copyright>
 		<PackageReadmeFile>readme.md</PackageReadmeFile>
 		<PackageTags>csharp;bogus</PackageTags>
-		<PackageReleaseNotes>Initial release</PackageReleaseNotes>
+		<PackageReleaseNotes>Add Vehicle generator</PackageReleaseNotes>
 		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
 		<RepositoryUrl>https://github.com/karenpayneoregon/bogus-training-data</RepositoryUrl>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Title>Data generators using Bogus</Title>
 		<PackageIcon>LibIcon.png</PackageIcon>
 		<PackageProjectUrl>https://github.com/karenpayneoregon/bogus-training-data/tree/master/BogusLibrary</PackageProjectUrl>
+		<Version>1.0.1</Version>
 	</PropertyGroup>
 
 	<ItemGroup>

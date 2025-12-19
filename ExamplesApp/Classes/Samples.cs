@@ -248,5 +248,21 @@ internal class Samples
         }
     }
 
+    /// <summary>
+    /// Displays a list of vehicles with their details, including ID, manufacturer, model, and year.
+    /// </summary>
+    /// <remarks>
+    /// This method retrieves the vehicle data from the singleton <see cref="BogusLibrary.Classes.DataContainer"/> instance
+    /// and outputs it in a formatted table using <see cref="Spectre.Console.AnsiConsole"/>.
+    /// </remarks>
+    public static void VehicleSample()
+    {
+        SpectreConsoleHelpers.PrintCyan();
+        
+        var vehicles = DataContainer.Instance.Vehicles;
+        
+        foreach (var v in vehicles)
+            AnsiConsole.MarkupLine($"{v.Id, -4}{v.Manufacturer, -15} {v.Model, -15} {v.Year}");
 
+    }
 }
