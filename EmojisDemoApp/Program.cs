@@ -1,5 +1,6 @@
 ﻿using BogusLibrary.Generators;
 using BogusLibrary.Models;
+using EmojisDemoApp.Classes;
 using EmojisDemoApp.Classes.Helpers;
 using Spectre.Console;
 
@@ -9,11 +10,11 @@ internal partial class Program
     static void Main(string[] args)
     {
         var humans = HumanGenerator.Create(25);
-        var table = CreateTable();
+        var pTable = CreateTable();
 
         foreach (var human in humans)
         {
-            table.AddRow(
+            pTable.AddRow(
                 human.Id.ToString(),
                 human.FirstName,
                 human.LastName,
@@ -22,7 +23,11 @@ internal partial class Program
             );
         }
 
-        AnsiConsole.Write(table);
+        AnsiConsole.Write(pTable);
+
+
+   
+
         SpectreConsoleHelpers.ExitPrompt();
     }
 

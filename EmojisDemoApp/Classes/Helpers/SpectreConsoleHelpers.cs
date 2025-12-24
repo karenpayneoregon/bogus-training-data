@@ -6,9 +6,15 @@ public static class SpectreConsoleHelpers
 {
     public static void ExitPrompt()
     {
+        Console.CursorVisible = false;
         Console.WriteLine();
-        AnsiConsole.MarkupLine("[bold cyan]Press any key to exit...[/]");
-
+        
+        AnsiConsole.Write(new Table()
+            .Border(TableBorder.None)
+            .Alignment(Justify.Center)
+            .AddColumn("").AddColumn("")
+            .AddRow(new Pill("Press any key to exit...", PillType.Info), new Text("")));
+        
         Console.ReadLine();
     }
 
