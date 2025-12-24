@@ -20,6 +20,8 @@ Console.OutputEncoding = new UTF8Encoding(encoderShouldEmitUTF8Identifier: false
 Console.InputEncoding = Encoding.UTF8;
 ```
 
+[Emoji Reference](https://spectreconsole.net/console/reference/emoji-reference)
+
 ## Data
 
 Comes from `BogusLibrary` project.
