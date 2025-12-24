@@ -15,8 +15,8 @@ internal partial class Program
         //Samples.DisplayClothingProducts();
         //Samples.HumansBornBetween1950And1980();
         //Samples.GenerateAndDeserialize();
-        //Samples.GroupAndDisplayHumansByGender();
-        Samples.VehicleSample();
+        Samples.GroupAndDisplayHumansByGender();
+        //Samples.VehicleSample();
         
         SpectreConsoleHelpers.ExitPrompt();
     }
