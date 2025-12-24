@@ -2,6 +2,25 @@
 using Spectre.Console.Rendering;
 
 namespace EmojisDemoApp.Classes;
+/// <summary>
+/// Represents the type of pill-shaped UI element, determining its visual style and color scheme.
+/// </summary>
+/// <remarks>
+/// This enum is used in conjunction with the <see cref="Pill"/> class to define the appearance
+/// of the pill when rendered in the console using Spectre.Console.
+/// </remarks>
+/// <summary>
+/// Represents a success pill with a green background.
+/// </summary>
+/// <summary>
+/// Represents a warning pill with a yellow background.
+/// </summary>
+/// <summary>
+/// Represents an error pill with a red background.
+/// </summary>
+/// <summary>
+/// Represents an informational pill with a blue background.
+/// </summary>
 public enum PillType
 {
     Success,
@@ -9,6 +28,16 @@ public enum PillType
     Error,
     Info,
 }
+/// <summary>
+/// Represents a styled pill-shaped UI element that can be rendered in the console.
+/// </summary>
+/// <remarks>
+/// The <see cref="Pill"/> class is used to display a text label with a specific style and color scheme
+/// based on the provided <see cref="PillType"/>. It implements the <see cref="IRenderable"/> interface,
+/// allowing it to be rendered using Spectre.Console.
+///
+/// https://spectreconsole.net/console/tutorials/creating-custom-renderables-tutorial
+/// </remarks>
 public sealed class Pill : IRenderable
 {
     private readonly string _text;
