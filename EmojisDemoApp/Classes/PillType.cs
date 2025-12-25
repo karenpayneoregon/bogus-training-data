@@ -54,6 +54,24 @@ public sealed class Pill : IRenderable
         _style = GetStyleForType(type);
     }
 
+    /// <summary>
+    /// Determines the visual style for a given <see cref="PillType"/>.
+    /// </summary>
+    /// <param name="type">The type of the pill for which the style is to be determined.</param>
+    /// <returns>
+    /// A <see cref="Style"/> object that defines the foreground and background colors
+    /// for the specified <see cref="PillType"/>.
+    /// </returns>
+    /// <remarks>
+    /// This method maps each <see cref="PillType"/> to a specific color scheme:
+    /// <list type="bullet">
+    /// <item><description><see cref="PillType.Success"/>: White text on a green background.</description></item>
+    /// <item><description><see cref="PillType.Warning"/>: Black text on a yellow background.</description></item>
+    /// <item><description><see cref="PillType.Error"/>: White text on a red background.</description></item>
+    /// <item><description><see cref="PillType.Info"/>: White text on a blue background.</description></item>
+    /// <item><description>Default: White text on a grey background.</description></item>
+    /// </list>
+    /// </remarks>
     private static Style GetStyleForType(PillType type) => type switch
     {
         PillType.Success => new Style(Color.White, Color.Green),

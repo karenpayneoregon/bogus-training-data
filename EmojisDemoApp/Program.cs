@@ -42,7 +42,7 @@ internal partial class Program
         table.AddColumn("[cyan]Id[/]");
         table.AddColumn("[cyan]First Name[/]");
         table.AddColumn("[cyan]Last Name[/]");
-        table.AddColumn("[cyan]Gender[/]");
+        table.AddColumn("[cyan]Gender[/]", col => col.Centered());
         table.AddColumn("[cyan]Birth Date[/]");
 
         return table;
