@@ -4,6 +4,27 @@ using System.Runtime.CompilerServices;
 namespace EmojisDemoApp.Classes.Helpers;
 public static class SpectreConsoleHelpers
 {
+    /// <summary>
+    /// Sets and displays a styled window title in the console using Spectre.Console.
+    /// </summary>
+    /// <param name="text">
+    /// The title text to display. Defaults to "Home screen" if no value is provided.
+    /// </param>
+    /// <remarks>
+    /// This method uses a custom <see cref="Pill"/> element with the <see cref="PillType.Info"/> style
+    /// to render the title in a visually appealing format.
+    /// </remarks>
+    public static void WindowTitle(string text = "Home screen")
+    {
+
+        AnsiConsole.Write(new Table()
+            .Border(TableBorder.None)
+            .Alignment(Justify.Center)
+            .AddColumn("")
+            .AddRow(new Pill(text, PillType.Info)));
+
+        Console.WriteLine();
+    }
     public static void ExitPrompt()
     {
         Console.CursorVisible = false;
@@ -18,11 +39,7 @@ public static class SpectreConsoleHelpers
         Console.ReadLine();
     }
 
-    private static void Render(Rule rule)
-    {
-        AnsiConsole.Write(rule);
-        AnsiConsole.WriteLine();
-    }
+
 
     public static void PrintCyan([CallerMemberName] string? methodName = null)
     {

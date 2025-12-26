@@ -1,14 +1,17 @@
 ﻿using BogusLibrary.Generators;
 using BogusLibrary.Models;
 using EmojisDemoApp.Classes;
-using EmojisDemoApp.Classes.Helpers;
 using Spectre.Console;
+using static EmojisDemoApp.Classes.Helpers.SpectreConsoleHelpers;
 
 namespace EmojisDemoApp;
 internal partial class Program
 {
     static void Main(string[] args)
     {
+        
+        WindowTitle();
+        
         var humans = HumanGenerator.Create(25);
         var pTable = CreateTable();
 
@@ -24,11 +27,8 @@ internal partial class Program
         }
 
         AnsiConsole.Write(pTable);
-
-
-   
-
-        SpectreConsoleHelpers.ExitPrompt();
+        
+        ExitPrompt();
     }
 
     private static Table CreateTable()
